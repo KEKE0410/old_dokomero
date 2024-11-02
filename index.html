@@ -1,0 +1,659 @@
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon"href="./ON.ico">
+<link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="./android-chrome-192x192.png" sizes="192x192">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="どこでも発車メロディーへようこそ!! JR東日本の首都圏の駅の発車メロディーを再現できるサイトです。">
+	<title>どこでも発車メロディー</title>
+<style>
+body {
+ -webkit-text-size-adjust: 100%;  
+} 
+html {
+  -webkit-overflow-scrolling: touch;
+}
+</style>
+    <link rel="stylesheet" href="css/hanbaga.css">
+    <script src="css/hanbaga1.js"></script>
+    <script src="css/hanbaga2.js"></script>
+    
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@hassyaberu" />
+<meta property="og:url" content="https://hassyaberu.com/" />
+<meta property="og:title" content="どこでも発車メロディー" />
+<meta property="og:description" content="どこでも発車メロディーへようこそ!! JR東日本の首都圏の駅の発車メロディーを再現できるサイトです。" />
+<meta property="og:image" content="https://hassyaberu.com/rosen/ON.png" />
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8YTBEEFSNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8YTBEEFSNP');
+</script>
+
+</head>
+
+<body>
+<header>
+
+  <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+      <center>
+      <font size="1" div style="line-height: 4em"><br></font>
+<div>
+  <h3>お問い合わせ</h3>
+  <p> <a href="mailto:support@mailfujios.net">support@mail.fujios.net</a>までお願いいたします。</p>
+ 
+</div>
+<h1>発車ベル 操作説明</h1>
+<font size="5" div style="line-height: 1.2em">
+<p>路線を選択します。<br>その後、駅を選択し番線を選択します。<br>その後、ONボタンを押し発車メロディーが流れます。<br>OFFボタンを押すと発車メロディーが止まり、ドア閉め放送が流れます。</p>
+</font>
+<font size="3" div style="line-height: 1.2em">
+<p>※一部、例外あり。(立川や吉祥寺などの立川式)</p>
+<p>※<FONT color="#ff0000">HTML5以上</FONT>、<FONT color="#ff0000">JavaScript</FONT>、<FONT color="#ff0000">CSS</FONT>に対応した端末から閲覧また操作して下さい。</p>
+<p>※動作しない場合は、必ずJavaScript、CSSを<FONT color="#ff0000">オン</FONT>にしているか確認してください。</p>
+<p>※画面サイズは、375×667以上の物に合わせて作成しています。</p></font><font size="3" div style="line-height: 4em">
+<p><a href="https://www.te2do.jp/" target="_blank" rel="noopener noreferrer">鉄道モバイル</a>(外部リンク)</p>
+</font>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://hassyaberu.com" data-hashtags="どこでも発車メロディー" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fhassyaberu.com%2F&layout=button&size=large&width=79&height=28&appId" width="79" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<div class="line-it-button" data-lang="ja" data-type="share-a" data-ver="3" data-url="https://hassyaberu.com/" data-color="default" data-size="large" data-count="false" style="display: none;"></div>
+ <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+<p> </p>
+
+      </center>
+      </div>
+  </div>
+</header>
+
+
+<body background="./1.gif">
+  <div style="text-align: center;">
+    <p>サイトにアクセスしにくい状況が続いてしまい申し訳ございません。現在、サーバー強化作業に伴い一時的に旧サイトに戻しております。
+      新サイトへの移行は再度、未定とさせていただきます。この度はご迷惑をおかけして申し訳ございません。<br/></p>
+  </div>
+<nobr>
+<font size="3"><p></p><br></font>
+<font size="6"><b><center>どこでも発車メロディー</b>
+</p><center>
+<table border="0" width="260">
+<tbody><tr>
+<td align="center">
+<font size="5"><b>JR東日本</b></font></td></tr>
+</tbody></table>
+<table border="1" width="260">
+<tbody>
+<tr>
+<td align="center" bgcolor="darkorange" width="30">
+<font color="white" size="4"><b>JT</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/TokaidoLine.html"><font size="4" color="darkorange"><b>東海道線</b></font></a><font size="4" color="darkorange">
+</b></font></td></tr>
+<tr>
+<td align="center" bgcolor="mediumblue" width="30">
+<font color="white" size="4"><b>JO</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Yokosuka-line-Sobu-line.html"><font size="4" color="mediumblue"><b>横須賀線・総武快速線</b></font></a><font size="4" color="mediumblue">
+</b></font></td></tr>
+<tr>
+<td align="center" bgcolor="darkorange" width="30">
+<font color="white" size="4"><b>JS</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/ShonanShinjukuLine.html"><b><font size="4" color="darkorange">湘南新宿ライン</font></b></a><b><font size="4" color="darkorange">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="dodgerblue" width="30">
+<font color="white" size="4"><b>JK</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/KeihinTohokuNegishiLine.html"><b><font size="4" color="dodgerblue">京浜東北線・根岸線</font></b></a><b><font size="4" color="dodgerblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="chartreuse" width="30">
+<font color="white" size="4"><b>JH</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Yokohamaline.html"><b><font size="4" color="chartreuse">横浜線</font></b></a><b><font size="4" color="chartreuse">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="yellow" width="30">
+<font color="black" size="4"><b>JN</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Nambuline.html"><b><font size="4" color="yellow">南武線</font></b></a><b><font size="4" color="yellow">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="chartreuse" width="30">
+<font color="white" size="4"><b>JY</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Yamanoteline.html"><b><font size="4" color="chartreuse">山手線</font></b></a><b><font size="4" color="chartreuse">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="mediumblue" width="30">
+<font color="white" size="4"><b>CO</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Chuo-line.html"><b><font size="4" color="mediumblue">中央本線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="orangered" width="30">
+<font color="white" size="4"><b>JC</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/ChuoLine.html"><b><font size="4" color="orangered">中央線快速</font></b></a><b><font size="4" color="yellow">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="yellow" width="30">
+<font color="black" size="4"><b><nobr>JB</nobr></b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Chuo-Sobuline.html"><b><font size="4" color="yellow">中央・総武線各駅停車</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="orangered" width="30">
+<font color="white" size="4"><b>JC</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Ome-line.html"><b><font size="4" color="orangered">青梅線</font></b></a><b><font size="4" color="orangered">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="orangered" width="30">
+<font color="white" size="4"><b>JC</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Itsukaichi-line.html"><b><font size="4" color="orangered">五日市線</font></b></a><b><font size="4" color="orangered">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="darkorange" width="30">
+<font color="white" size="4"><b>JU</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/UtsunomiyaLine.html"><b><font size="4" color="darkorange">宇都宮線</font></b></a><b><font size="4" color="darkorange">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="darkorange" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/TakasakiLine.html"><b><font size="4" color="darkorange">高崎線</font></b></a><b><font size="4" color="darkorange">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="seagreen" width="30">
+<font color="white" size="4"><b>JA</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Saikyo-Line-Kawagoe-Line.html"><b><font size="4" color="seagreen">埼京線・川越線</font></b></a><b><font size="4" color="seagreen">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="gray" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Kawagoe-line-Hachoko-line.html"><b><font size="4" color="gray">川越線・八高線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="mediumblue" width="30">
+<font color="white" size="4"><b>JJ</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Joban-line.html"><b><font size="4" color="mediumblue">常磐線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="yellow" width="30">
+<font color="black" size="4"><b>JO</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Sobu-line.html"><b><font size="4" color="yellow">総武本線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="dodgerblue" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Uchibo-line.html"><b><font size="4" color="dodgerblue">内房線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="orangered" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Sotobo-line.html"><b><font size="4" color="orangered">外房線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="lightseagreen" width="30">
+<font color="white" size="4"><b>JO</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Narita-line.html"><b><font size="4" color="lightseagreen">成田線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="orangered" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Togane-line.html"><b><font size="4" color="orangered">東金線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="firebrick" width="30">
+<font color="white" size="4"><b>JE</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/KeiyoLine.html"><b><font size="4" color="firebrick">京葉線</font></b></a><b><font size="4" color="firebrick">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="orangered" width="30">
+<font color="white" size="4"><b>JM</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/MusashinoLine.html"><b><font size="4" color="orangered">武蔵野線</font></b></a><b><font size="4" color="orangered">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="gold" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Ryomo-line.html"><b><font size="4" color="gold">両毛線</font></b></a><b><font size="4" color="seagreen">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="darkorange" width="30">
+<font color="white" size="4"><b>JT</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Itoline.html"><b><font size="4" color="darkorange">伊東線</font></b></a><b><font size="4" color="darkorange">
+</font></b></td></tr>
+<tr>
+<td align="center" bgcolor="saddlebrown" width="30">
+<font color="white" size="4"><b>　</b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Kashima-line.html"><font size="4" color="saddlebrown"><b>鹿島線</font></b></a><b><font size="4" color="saddlebrown">
+</font></b></td></tr>
+</tbody></table><p>
+<table border="0" width="260">
+<tbody><tr><td><font size="5"><b><center>私鉄</center></b></font></td></tr>
+</tbody></table>
+<table border="1" width="310">
+<tbody><tr>
+<td align="center" bgcolor="mediumblue" width="30">
+<font color="white" size="4"><b><nobr>R</nobr></b></font></td>
+<td align="center" bgcolor="white" width="230">
+<a href="./rosen/Tokyorinkaikosokutetsudo-Rinkai-line.html"><b><font size="4" color="mediumblue">東京臨海高速鉄道 りんかい線</font></b></a><b><font size="4" color="mediumblue">
+</font></b></td></tr>
+</tbody></table></nobr>
+</p><p>
+</p>
+
+<center>
+<table border="0" width="260">
+<tbody><tr>
+<td align="center">
+<font size="5"><b>更新情報・お知らせ</b></font></td></tr>
+</tbody></table></center>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/osirase.css">
+<style type="text/css">
+	section{
+		height:285px;
+		width:350px;
+		border: 1px solid #CCC;
+    -webkit-overflow-scrolling: touch;
+		overflow-y:scroll;
+	}
+.text_pc::-webkit-scrollbar{ 
+    width: 15px;
+}
+.text_pc::-webkit-scrollbar-thumb{ 
+    background: #F70841;
+    border-radius: 10px;
+}
+.text_pc::-webkit-scrollbar-track-piece:start{
+    background: #ffa5ba;
+}
+.text_pc::-webkit-scrollbar-track-piece:end{
+    background: #fff;
+}
+</style>
+</head>
+<body>
+<section align="left"> <font size="3">
+  サイトにアクセスしにくい状況が続いてしまい申し訳ございません。現在、サーバー強化作業に伴い一時的に旧サイトに戻しております。
+  新サイトへの移行は再度、未定とさせていただきます。この度はご迷惑をおかけして申し訳ございません。</p>
+<FONT color="#0000ff">10/12(土)　</FONT>横浜駅の発車メロディーを変更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+10/01(火)　東海道線の藤沢駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+<FONT color="#ff0000">09/16(月)　</FONT>外房線の大原駅2番線の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+08/15(木)　外房線の大原駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2番線を除く)</p>
+07/01(月)　南武線の武蔵溝ノ口駅の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーを変更しました。</p>
+06/06(木)　京葉線の舞浜駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+06/06(木)　常磐線の岩間駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+03/25(月)　中央線快速の新宿駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+03/25(月)　武蔵野線の吉川駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+03/25(月)　山手線の池袋駅を更新しました。</p>
+03/04(月)　山手線の池袋駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+03/04(月)　京浜東北線の田端駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">02/25(日)　</FONT>武蔵野線の越谷レイクタウン駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>我孫子支線の東我孫子駅の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>我孫子支線の湖北駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>我孫子支線の新木駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>我孫子支線の木下駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>我孫子支線の小林駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>我孫子支線の安食駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>総武快速線の稲毛駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>外房線の誉田駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>りんかい線の大井町駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+<FONT color="#ff0000">01/01(月)　</FONT>りんかい線の東雲駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+10/27(金)　成田線の布佐駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+10/05(木)　宇都宮線の蓮田駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+10/04(水)　山手線の神田駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+10/04(水)　りんかい線の天王洲アイル駅の発<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;車メロディーを変更しました。</p>
+10/04(水)　中央線快速の国分寺駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+10/04(水)　武蔵野線の北朝霞駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">08/06(日)　</FONT>南武線の稲田堤駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+07/28(金)　武蔵野線の南越谷駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+07/06(木)　武蔵野線の北朝霞駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+<FONT color="#0000ff">07/01(土)　</FONT>横須賀線の久里浜駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+06/29(木)　りんかい線の天王洲アイル駅の発<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;車メロディーを変更しました。</p>
+06/29(木)　常磐線の南千住駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+06/29(木)　横須賀線の衣笠駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+06/15(木)　横須賀線の横須賀駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">06/10(土)　</FONT>横須賀線の田浦駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">06/10(土)　</FONT>中央線快速の西八王子駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+<FONT color="#ff0000">05/14(日)　</FONT>青梅線の東青梅駅の番線を変更し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+<FONT color="#0000ff">04/15(土)　</FONT>京葉線の舞浜駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+04/10(月)　総武快速線の新小岩駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+04/10(月)　中央線快速の神田駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+04/10(月)　中央線快速の荻窪駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+04/10(月)　成田線の成田空港駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+04/10(月)　成田線の空港第2ビル駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+<FONT color="#0000ff">03/25(土)　</FONT>青梅線の青梅駅4番線の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを追加しました。</p>
+<FONT color="#0000ff">03/18(土)　</FONT>京葉線の幕張豊砂駅を追加しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">03/18(土)　</FONT>青梅線の青梅駅3,4番線を追加し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+<FONT color="#0000ff">03/18(土)　</FONT>青梅線の河辺駅3番線を追加しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">03/18(土)　</FONT>東海道線の快速アクティーを廃<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;止しました。</p>
+<FONT color="#ff0000">03/12(日)　</FONT>武蔵野線の南越谷駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+03/08(水)　中央・総武線各駅停車の荻窪駅を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更新しました。</p>
+03/08(水)　中央線快速の荻窪駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">02/23(木)　</FONT>東海道線の小田原駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/17(金)　武蔵野線の吉川美南駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+02/08(水)　武蔵野線の新松戸駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/08(水)　武蔵野線の南流山駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">02/04(土)　</FONT>常磐線(南中郷～いわき間)を公開<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+<FONT color="#0000ff">02/04(土)　</FONT>常磐線の常陸多賀駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/03(金)　武蔵野線の三郷駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+02/03(金)　武蔵野線の新三郷駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/03(金)　青梅線の河辺駅の番線を入れ替<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;えました。</p>
+12/16(金)　常磐線の内原駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+12/16(金)　宇都宮線の蓮田駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">11/20(日)　</FONT>常磐線(南中郷～いわき間)の作<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成を開始しました。</p>
+<FONT color="#ff0000">11/20(日)　</FONT>両毛線を公開しました。</p>
+<FONT color="#ff0000">11/20(日)　</FONT>路線選択欄から水戸線,日光線を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;削除しました。</p>
+<FONT color="#0000ff">11/19(土)　</FONT>中央本線の甲府駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/24(月)　打ち返しをした際の戸閉放送を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;実際の駅と同様に変更しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">10/23(日)　</FONT>宇都宮線の蓮田駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+10/14(金)　東金線の東金駅を更新しました。</p>
+<FONT color="#ff0000">10/09(日)　</FONT>両毛線の作成を開始しました。</p>
+<FONT color="#ff0000">10/09(日)　</FONT>中央本線を公開しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>中央線快速の東京駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>青梅線の白丸駅の番線表記を変更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>青梅線の沢井駅の番線表記を変更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>高崎線から上野駅16番線にアク<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;セス出来るようになりました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>宇都宮線の尾久駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>常磐線の水戸駅を更新しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>中央線快速の相模湖駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>外房線の大網駅を更新しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>総武快速線の通勤快速を廃止しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>高崎線の高崎問屋町駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>中央線快速の高尾駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>横浜線の淵野辺駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>南武線の武蔵溝ノ口駅から快速で<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登戸駅にアクセスすると1番線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;にアクセス出来ないバグを修正<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>五日市線の武蔵増戸駅を立川式に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;変更しました。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>常磐線の土浦駅2番線から水戸方<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面にアクセス出来るようになり<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました</p>
+<FONT color="#0000ff">10/08(土)　</FONT>東海道線の茅ヶ崎駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">10/08(土)　</FONT>武蔵野線の新松戸駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">08/14(日)　</FONT>武蔵野線の北朝霞駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+<FONT color="#0000ff">07/23(土)　</FONT>中央線快速の大月駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">07/23(土)　</FONT>中央線快速の藤野駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+07/11(月)　中央線快速の猿橋駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+07/08(金)　武蔵野線の北朝霞駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+07/08(金)　湘南新宿ライン,埼京線の新宿駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;の発車メロディーを変更しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">07/03(日)　</FONT>湘南新宿ライン,埼京線の新宿駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;の発車メロディーを変更しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">07/03(日)　</FONT>中央線快速の四方津駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">07/03(日)　</FONT>中央線快速の上野原駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">07/03(日)　</FONT>外房線の八積駅を更新しました。</p>
+05/02(月)　東海道線の国府津駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+05/02(月)　東海道線の茅ヶ崎駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+05/02(月)　京浜東北線,横浜線の東神奈川駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+05/02(月)　根岸線の関内駅を更新しました。</p>
+05/02(月)　常磐線の柏駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+04/04(月)　中央線快速の武蔵小金井駅を更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新しました。</p>
+04/04(月)　成田線の成田空港駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+04/04(月)　中央線快速の西荻窪を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+04/04(月)　中央・総武線各駅停車の大久保<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+04/04(月)　中央・総武線各駅停車と中央線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快速の高円寺を更新しました。</p>
+04/04(月)　総武快速線の稲毛を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+04/04(月)　外房線の誉田駅2番線から鎌取2<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;番線にアクセス出来ないバグ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を修正しました。</p>
+<FONT color="#ff0000">03/13(日)　</FONT>成田線の通勤快速を廃止しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+<FONT color="#ff0000">03/13(日)　</FONT>宇都宮線の宝積寺駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#ff0000">03/13(日)　</FONT>宇都宮線の氏家駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+<FONT color="#ff0000">03/13(日)　</FONT>宇都宮線の岡本駅4番線の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーの誤りを修正しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">03/06(日)　</FONT>宇都宮線の矢板駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+<FONT color="#ff0000">03/06(日)　</FONT>中央線快速の四ツ谷駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+03/01(火)　常磐線の我孫子駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+02/25(金)　横須賀線の逗子駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+02/25(金)　中央線快速の駅選択に立川駅を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;追加しました。</p>
+02/22(火)　京浜東北線の日暮里駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+02/22(火)　横須賀線の北鎌倉駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/18(金)　横須賀線の東逗子駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/18(金)　南武線の武蔵中原駅の戸閉め放<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送の不具合を修正しました。</p>
+02/18(金)　宇都宮線の蓮田駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+01/19(水)　中央本線の作成を開始しました。</p>
+01/19(水)　川越線・八高線を公開しました。</p>
+12/22(水)　中央・総武線各駅停車、中央線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快速の阿佐ヶ谷駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+12/22(水)　中央線快速の高円寺駅4番線を立<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;川式に変更しました。</p>
+<FONT color="#ff0000">12/19(日)　</FONT>山手線の品川駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+12/17(金)　中央線快速の武蔵小金井駅を更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新しました。</p>
+12/16(木)　中央・総武線各駅停車、中央線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快速の西荻窪駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+12/14(火)　中央線快速の荻窪駅4番線を立川<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;式に変更しました。</p>
+12/14(火)　中央線快速の武蔵小金井駅を更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新しました。</p>
+12/14(火)　東海道線の熱海駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+12/14(火)　中央・総武線各駅停車の千駄ヶ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;谷駅を更新しました。</p>
+12/14(火)　常磐線の東海駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+12/09(木)　中央・総武線各駅停車の東中野<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を更新しました。</p>
+12/08(水)　中央線快速の阿佐ヶ谷駅4番線を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立川式に変更しました。</p>
+12/08(水)　中央線快速の西荻窪駅4番線を立<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;川式に変更しました。</p>
+<FONT color="#ff0000">12/05(日)　</FONT>山手線の品川駅の番線を2番線か<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ら3番線に変更しました。</p>
+12/02(木)　武蔵野線の南越谷駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+12/02(木)　武蔵野線の越谷レイクタウン駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+12/02(木)　武蔵野線の吉川美南駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+12/02(木)　武蔵野線の新三郷駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+12/02(木)　武蔵野線の南流山駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+12/02(木)　中央線快速の上野原駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+11/29(月)　中央線快速の高尾駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+11/29(月)　横須賀線の北鎌倉駅の番線表記<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;の誤りを修正しました。</p>
+11/19(金)　南武線の西府駅を更新しました。</p>
+11/16(火)　中央線快速の武蔵小金井駅を更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新しました。</p>
+11/16(火)　中央線快速の国分寺駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+11/09(火)　中央線快速の武蔵境駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+11/09(火)　中央線快速の大月駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+11/01(月)　中央線快速の相模湖駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+10/29(金)　東京駅1～10番線,総武地下1,3,4<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;番線,京葉地下1,3番線を更新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+10/29(金)　渋谷駅3,4番線を更新しました。</p>
+10/29(金)　外房線の行川アイランド駅を更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新しました。</p>
+10/29(金)　山手線の上野駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+10/29(金)　東京臨海高速鉄道 りんかい線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;の大井町駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+10/27(水)　武蔵野線の市川大野駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+<FONT color="#0000ff">10/23(土)　</FONT>武蔵野線の船橋法典駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+10/19(火)　武蔵野線の東松戸駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">10/16(土)　</FONT>高崎線の鴻巣駅1番線の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーが流れないバグを修<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正しました。</p>
+<FONT color="#0000ff">10/16(土)　</FONT>武蔵野線の新八柱駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+10/14(木)　宇都宮線の蓮田駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+10/12(火)　青梅線の奥多摩駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/07(木)　川越線・八高線の作成を開始しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+10/07(木)　鹿島線を公開しました。</p>
+10/07(木)　鹿島線の作成を開始しました。</p>
+10/07(木)　成田線を公開しました。</p>
+10/06(水)　埼京線の板橋駅を更新しました。</p>
+10/05(火)　横須賀線・総武快速線の品川駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13番線を更新しました。</p>
+10/04(月)　成田線の作成を開始しました。</p>
+10/04(月)　総武本線を公開しました。</p>
+<FONT color="#ff0000">10/03(日)　</FONT>中央線快速の豊田駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">10/03(日)　</FONT>常磐線の松戸駅を更新しました。</p>
+<FONT color="#ff0000">10/03(日)　</FONT>宇都宮線の栗橋駅2番線の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーの名前がWaterCrown<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;なのにもかかわらずGotadelVi<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entが流れるバグを修正しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">10/03(日)　</FONT>宇都宮線の蓮田駅2,3番線の発車<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;メロディーが流れないバグ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を修正しました。</p>
+10/01(金)　横浜線の菊名駅1番線を立川式に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;変更しました。</p>
+10/01(金)　宇都宮線の東大宮駅2番線の発車<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;メロディーが流れないバグ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を修正しました。</p>
+10/01(金)　宇都宮線,高崎線の大宮駅を更新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+09/30(木)　作成予定に中央本線を追加しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+09/30(木)　宇都宮線の蒲須坂駅1番線の発車<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;メロディーの間違いを修正<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+09/30(木)　高崎線の鴻巣駅2番線の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーが流れないバグを修<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正しました。</p>
+09/30(木)　高崎線の桶川駅2,3番線の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーが流れないバグを修<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正しました。</p>
+09/27(月)　横須賀線の武蔵小杉駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+09/27(月)　武蔵野線の新松戸駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+09/27(月)　宇都宮線の東鷲宮駅2番線の発車<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;メロディーの名前がWaterCro<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wnなのにもかかわらずGotadel<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vientが流れるバグを修正しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+09/27(月)　総武本線の作成を開始しました。</p>
+09/27(月)　東金線を公開しました。</p>
+<FONT color="#ff0000">09/26(日)　</FONT>東金線の作成を開始しました。</p>
+<FONT color="#ff0000">09/26(日)　</FONT>外房線を公開しました。</p>
+<FONT color="#ff0000">09/26(日)　</FONT>湘南新宿ライン,埼京線の恵比寿<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を更新しました。</p>
+<FONT color="#0000ff">09/25(土)　</FONT>外房線の作成を開始しました。</p>
+<FONT color="#0000ff">09/25(土)　</FONT>内房線を公開しました。</p>
+<FONT color="#0000ff">09/25(土)　</FONT>中央線快速の国分寺駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+<FONT color="#0000ff">09/25(土)　</FONT>武蔵野線の北朝霞駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">09/23(木)　</FONT>宇都宮線の久喜駅3番線の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーが流れないバグを修<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正しました。</p>
+<FONT color="#ff0000">09/23(木)　</FONT>東海道線の早川駅2番線の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーの名前がWaterCrown<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;なのにもかかわらずGotadelVi<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entが流れるバグを修正しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">09/23(木)　</FONT>東京臨海高速鉄道 りんかい線の<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国際展示場駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+09/21(火)　宇都宮線の宇都宮駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーが上下逆になっているバ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;グを修正しました。</p>
+09/21(火)　すすきの高原 V1がすすきの高原<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V2になっているバグを修正しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">09/19(日)　</FONT>発車メロディーが2コラース目に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入ると、発車メロディーが途中<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;から始まるバグを確認しており<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ます。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;順次、音声ファイルの置き換え<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を行いバグの修正を行いますが<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相当な時間がかかる事が予想さ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;れます。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;バグ修正まで今しばらくお待ち<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ください。</p>
+<FONT color="#ff0000">09/19(日)　</FONT>相模線,鹿島線を削除しました。</p>
+09/17(金)　宇都宮線,高崎線の大宮駅 3,4,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6,7,8,9番線の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;が流れないバグを修正しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+09/13(月)　新サイトがオープンしました。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;この新サイトで引き続き更新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を行います。</p>
+<FONT color="#0000ff">09/11(土)　</FONT>南武線の稲田堤,中野島,登戸,宿<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;河原,久地,武蔵溝ノ口駅を更新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+<FONT color="#0000ff">09/11(土)　</FONT>中央線快速の西荻窪,荻窪,阿佐<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ヶ谷,高円寺駅を更新しました。</p>
+09/10(金)　東海道線の平塚駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+09/10(金)　中央・総武線各駅停車の水道橋<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を更新しました。</p>
+09/10(金)　埼京線の大宮駅を更新しました。</p>
+09/10(金)　山手線の上野駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+09/10(金)　東京臨海高速鉄道 りんかい線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;の大井町駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+09/09(木)　サイトの名前をどこでも発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーに変更しました。</p>
+09/09(木)　東海道線の品川駅11,12番線の<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;発車メロディーが流れないバ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;グを修正しました。</p>
+09/09(木)　中央・総武線各駅停車の本八幡<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅2番線が表示されないバグを<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修正しました。</p>
+<FONT color="#0000ff">03/13(土)　</FONT>東海道線,宇都宮線,高崎線の通<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勤快速を廃止しました。</p>
+<FONT color="#0000ff">03/13(土)　</FONT>宇都宮線の東大宮駅を快速停車<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅に追加しました。</p>
+09/01(火)　中央線快速の武蔵小金井駅の発<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;車メロディーを変更しました。</p>
+07/09(木)　高崎線の籠原駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーの間違いを修正しました。</p>
+07/09(木)　高崎線の熊谷駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーの間違いを修正しました。</p>
+07/01(水)　常磐線の我孫子駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+06/04(木)　内房線の作成を開始しました。</p>
+06/04(木)　新たに相模線,川越線・八高線,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;総武本線,内房線,外房線,成田<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;線,東金線,両毛線,水戸線,鹿島<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;線,日光線を追加します。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今しばらくお待ちください。</p>
+<FONT color="#0000ff">05/23(土)　</FONT>東海道線の通勤快速停車駅を修<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正しました。</p>
+<FONT color="#ff0000">04/26(日)　</FONT>中央・総武線各駅停車の浅草橋<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を更新しました。</p>
+<FONT color="#ff0000">04/26(日)　</FONT>中央・総武線各駅停車の両国駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+04/20(月)　東海道線の湯河原駅1番線が表示<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;されないバグを修正しました。</p>
+04/14(火)　東海道線の新橋駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+04/14(火)　湘南新宿ラインの大宮駅を更新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+04/14(火)　東海道線の平塚駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">04/12(日)　</FONT>常磐線の柏駅の発車メロディー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+<FONT color="#ff0000">04/12(日)　</FONT>横須賀線の逗子駅が表示されな<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;いバグを修正しました。</p>
+<FONT color="#ff0000">04/12(日)　</FONT>常磐線の柏駅を更新しました。</p>
+<FONT color="#ff0000">04/05(日)　</FONT>横須賀線・総武快速線の東京駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2番線から新橋駅1番線にアク<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;セスできないバグを修正しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+03/31(火)　青梅線の青梅駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+03/24(火)　宇都宮線の尾久駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">03/14(土)　</FONT>山手線に高輪ゲートウェイ駅を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;追加しました。</p>
+<FONT color="#0000ff">03/14(土)　</FONT>京浜東北線に高輪ゲートウェイ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を追加しました。</p>
+<FONT color="#0000ff">03/14(土)　</FONT>常磐線の佐貫駅を龍ケ崎市駅に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;変更しました。</p>
+<FONT color="#0000ff">03/14(土)　</FONT>中央線快速から中央・総武線各<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅停車にアクセスできなくな<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;りました。</p>
+03/12(木)　横須賀線・総武快速線の船橋駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+03/12(木)　中央・総武線各駅停車の船橋駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+03/12(木)　武蔵野線の西船橋駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">03/07(土)　</FONT>スマホ等から閲覧した際、広告<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;が表示されていましたが表示<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;されなくなりました。</p>
+<FONT color="#0000ff">03/07(土)　</FONT>新サイトがオープンしました。</p>
+03/05(木)　<s>路線の追加は終了しましたが</s>発<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;車メロディーなどの更新は今<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;後も継続いたします。</p>
+03/05(木)　路線別で常磐線が選択できるよ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;うになりました。</p>
+02/17(月)　中央線快速の中野駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+02/17(月)　中央・総武線各駅停車の千葉駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を更新しました。</p>
+<FONT color="#ff0000">02/02(日)　</FONT>中央・総武線各駅停車の東中野<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を更新しました。</p>
+01/31(金)　山手線の新橋駅5番線のURLの間<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;違いを修正しました。</p>
+01/31(金)　京浜東北線の新子安駅を更新し<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ました。</p>
+01/31(金)　京浜東北線の鶴見駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+01/31(金)　東海道線の新橋駅1,2番線のURL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を変更しました。</p>
+01/30(木)　横須賀線・総武快速線の東京駅<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3番線から新橋駅1番線にアク<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;セスできないバグを修正しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+01/29(水)　常磐線の作成を開始しました。</p>
+01/29(水)　路線別で中央・総武線各駅停車<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;が選択できるようになりまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+01/27(月)　山手線の新宿駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+<FONT color="#ff0000">01/26(日)　</FONT>京浜東北線の蒲田駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">01/26(日)　</FONT>山手線の大崎駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+<FONT color="#ff0000">01/26(日)　</FONT>南武線の西国立駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">01/26(日)　</FONT>南武線の矢川駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+<FONT color="#0000ff">11/30(土)　</FONT>埼京線の快速停車駅を変更しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+11/22(金)　東海道線の東京駅の番線選択の<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ぺージデザインを変更しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。順次すべての駅をこの新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;デザインに変更します。</p>
+11/19(火)　中央・総武線各駅停車の作成を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;開始しました。</p>
+11/19(火)　路線別で横浜線が選択できるよ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;うになりました。</p>
+<FONT color="#ff0000">11/17(日)　</FONT>京浜東北線の品川駅の番線を3番<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;線から4番線に変更しました。</p>
+<FONT color="#0000ff">11/16(土)　</FONT>南武線の津田山駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+11/14(木)　武蔵野線の東川口駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+11/14(木)　中央線快速の三鷹駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+11/14(木)　中央線快速の御茶ノ水駅を更新<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+11/14(木)　横須賀線の鎌倉駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+11/14(木)　南武線の分倍河原駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+11/14(木)　武蔵野線の北朝霞駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+11/14(木)　山手線の上野駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+11/14(木)　宇都宮線の蓮田駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+<FONT color="#0000ff">11/02(土)　</FONT>横須賀線の西大井駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#0000ff">10/26(土)　</FONT>川越線の指扇駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+<FONT color="#0000ff">10/26(土)　</FONT>川越線の西大宮駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#ff0000">10/22(火)　</FONT>京浜東北線・根岸線の駅選択に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;東神奈川駅を追加しました。</p>
+<FONT color="#ff0000">10/20(日)　</FONT>横浜線の作成を開始しました。</p>
+<FONT color="#ff0000">10/20(日)　</FONT>路線別で横須賀線・総武快速線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;が選択できるようになりまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/17(木)　川越線の川越駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+10/17(木)　川越線の南古谷駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/17(木)　川越線の日進駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+10/15(火)　宇都宮線の蓮田駅の発車メロデ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ィーを変更しました。</p>
+10/15(火)　埼京線の北与野駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/15(火)　埼京線の南与野駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/15(火)　埼京線の与野本町駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+10/15(火)　埼京線の中浦和駅を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+10/15(火)　埼京線の戸田駅を更新しました<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;。</p>
+10/15(火)　埼京線の戸田公園駅を更新しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+08/26(月)　武蔵野線の南越谷駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+<FONT color="#0000ff">08/10(土)　</FONT>高崎線の本庄駅 3番線の発車メ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ロディーが鳴らないバグを修正<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;しました。</p>
+08/08(木)　埼京線の武蔵浦和駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+08/05(月)　武蔵野線の北朝霞駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+07/26(金)　武蔵野線の南越谷駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+07/22(月)　山手線の上野駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+07/05(金)　武蔵野線の北朝霞駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>作成しない予定なので<s>相模線</s>、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常磐線 各駅停車、<s>総武本線</s>、<s>内</s><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>房線</s>、<s>外房線</s>、<s>成田線</s>、<s>東金線</s><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;、<s>鹿島線</s>を路線別から削除しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>横須賀線・総武快速線の作成を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;開始しました。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>中央線快速に高尾駅～大月駅間<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を追加しました。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>中央線快速(高尾～大月間)の作<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成を開始しました。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>青梅線に青梅駅～奥多摩駅間を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;追加しました。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>青梅線(青梅～奥多摩間)の作成<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を開始しました。</p>
+<FONT color="#ff0000">06/23(日)　</FONT>路線別で南武線が選択できるよ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;うになりました。</p>
+<FONT color="#ff0000">06/16(日)　</FONT>路線別にメニューを追加し操作<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;説明、バグ等の報告を追加しま<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;した。</p>
+<FONT color="#ff0000">06/09(日)　</FONT>東海道線の東京駅 7,8,9,10番線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;のページデザインを変更し、パ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ソコンから閲覧した際 ON,OFF<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ボタンがずれるバグを修正し、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;順次すべての駅をこの新デザイ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ンに変更します。</p>
+06/06(木)　スマホからお知らせをスクロー<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ルしてご覧いただけるようにな<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;りました。</p>
+<FONT color="#0000ff">05/04(土)　</FONT>路線別を更新しました。</p>
+<FONT color="#ff0000">04/28(日)　</FONT>東海道線の駅選択に小田原駅を<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;追加しました。</p>
+<FONT color="#ff0000">04/28(日)　</FONT>作成中と作成予定を更新しまし<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;た。</p>
+<FONT color="#0000ff">04/20(土)　</FONT>南武線の作成を開始しました。</p>
+<FONT color="#0000ff">04/20(土)　</FONT>山手線の上野駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+<FONT color="#0000ff">04/20(土)　</FONT>京浜東北線・根岸線の駅選択に<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;田端駅を追加しました。</p>
+<FONT color="#0000ff">04/20(土)　</FONT>路線別で山手線が選択できるよ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;うになりました。</p>
+<FONT color="#ff0000">04/07(日)　</FONT>湘南新宿ラインの駅選択に大崎<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;駅を追加しました。</p>
+04/05(金)　宇都宮線・高崎線の尾久駅で上<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;野駅 8番線にアクセス出来ない<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;バグを修正しました。</p>
+04/05(金)　宇都宮線・高崎線の駅選択に上<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;野駅を追加しました。</p>
+04/03(水)　宇都宮線の宇都宮駅の発車メロ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ディーを変更しました。</p>
+03/26(火)　京葉線の舞浜駅の発車メロディ<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ーを変更しました。</p>
+03/08(金)　東京臨海高速鉄道 りんかい線の<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大井町駅の発車メロディーを変<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更しました。</p>
+03/01(金)　山手線の作成を開始しました。</p>
+03/01(金)　横須賀線・総武快速線、相模線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;、横浜線、南武線、中央・総武<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;線各駅停車、常磐線 各駅停車、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;常磐線、総武本線、内房線、外<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;房線、成田線、東金線、鹿島線<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;を作成予定に変更しました。</p>
+02/28(木)　東海道線 函南～三島(南行)を更<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新しました。</p>
+02/28(木)　お知らせをオープンしました。</p>
+
+</section>
+</font>
+</body>
+
+
+<!-- FC2カウンター ここから -->
+<font size="3" div style="line-height: 2em">
+<b>累計アクセス者数</b><br><script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=34666202&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=34666202&main=1" /></noscript>
+</font>
+<!-- FC2カウンター ここまで -->
+<font size="1" div style="line-height: 0.3em">
+<p>&nbsp;</p>
+</font>
+<!-- FC2カウンター ここから -->
+<font size="3" div style="line-height: 0.3em">
+<br><b>現在の閲覧者数:</b><script language="javascript" type="text/javascript" src="//counter1.fc2.com/views.php?id=34666202&main=1"></script><noscript><img src="//counter1.fc2.com/counter_now.php?id=34666202&main=1" /></noscript>
+<!-- FC2カウンター ここまで -->
+
+</font></dIV></body></html>

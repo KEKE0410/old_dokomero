@@ -1,0 +1,40 @@
+
+<Files ~ "\.(html|mp3|wav)$">
+Header add Pragma "no-cache"
+Header set Cache-Control no-cache
+</Files>
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ https://hassyaberu.com/$1 [L,R=301]
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index https://hassyaberu.com [R=301,L]
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*)\index$ https://hassyaberu.com/$1 [R=301,L]
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*)\index/$ https://hassyaberu.com/$1 [R=301,L]
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{QUERY_STRING} !=""
+RewriteRule ^(.*)$ /$1? [R=301,L]
+
+ErrorDocument 400 /error/400.html
+ErrorDocument 401 /error/401.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 https://info.hassyaberu.com/error/500.html
+ErrorDocument 503 https://info.hassyaberu.com/error/503.html
+
